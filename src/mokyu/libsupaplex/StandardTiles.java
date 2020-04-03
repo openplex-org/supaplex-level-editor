@@ -61,4 +61,10 @@ public class StandardTiles {
     public final static Tile RAM_CHIP_UP = new Tile((byte)0x26); // ok
     public final static Tile RAM_CHIP_DOWN = new Tile((byte)0x27); // ok
     public final static Tile INVISIBLE_WALL = new Tile((byte)0x28);
+    // extended tiles
+    public final static Tile GRAVITY_AWARE_VOID = new Tile((byte)0x29);
+    public final static Tile YELLOWCRUSH_ZONK = new Tile((byte)0x2A);
+    public final static Tile GHOST_BASE = new Tile((byte)0x2B);
+    public final static Tile GHOST_MURPHY = new Tile((byte)0x2C);
+    public final static Tile LIGHTWEIGHT_ZONK = new Tile((byte)0x2D);
 }

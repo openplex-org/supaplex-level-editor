@@ -29,7 +29,7 @@ import javax.imageio.ImageIO;
  */
 public class iconGenerator extends StandardTiles {
 
-    private static final int MAX_TILES = 40; // There are 40 unique tile image stored in tiles.png (656x16 pixels)
+    private static final int MAX_TILES = 45; // There are 40 unique tile image stored in tiles.png (656x16 pixels)
     private static final int TILE_SIZE = 16; // Each of these tiles are 16 by 16 pixels in size and stored side by side.
 
     /**

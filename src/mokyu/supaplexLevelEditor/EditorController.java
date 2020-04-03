@@ -245,7 +245,7 @@ public class EditorController implements ActionListener, FocusListener, ItemList
         }
 
         // handle all the other buttons (tile buttons)
-        for (int i = 0x0; i <= 0x28; i++) {
+        for (int i = 0x0; i <= 0x2D; i++) {
             if (new Tile((byte) i).getNiceName().equals(source.getName())) {
                 model.setSelectedTile(new Tile((byte) i));
                 return;

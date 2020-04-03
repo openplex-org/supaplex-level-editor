@@ -202,6 +202,53 @@ public class EditorView extends javax.swing.JFrame {
         x.setIcon(model.getTiles().get(tile));
         basic.add(x);
 
+
+
+        x = new JButton();
+        tile = StandardTiles.GRAVITY_AWARE_VOID;
+        x.addActionListener(controller);
+        x.setName(tile.getNiceName());
+        x.setToolTipText(tile.getNiceName());
+        x.setIcon(model.getTiles().get(tile));
+        basic.add(x);
+
+
+        x = new JButton();
+        tile = StandardTiles.YELLOWCRUSH_ZONK;
+        x.addActionListener(controller);
+        x.setName(tile.getNiceName());
+        x.setToolTipText(tile.getNiceName());
+        x.setIcon(model.getTiles().get(tile));
+        basic.add(x);
+
+
+        x = new JButton();
+        tile = StandardTiles.GHOST_BASE;
+        x.addActionListener(controller);
+        x.setName(tile.getNiceName());
+        x.setToolTipText(tile.getNiceName());
+        x.setIcon(model.getTiles().get(tile));
+        basic.add(x);
+
+        x = new JButton();
+        tile = StandardTiles.GHOST_MURPHY;
+        x.addActionListener(controller);
+        x.setName(tile.getNiceName());
+        x.setToolTipText(tile.getNiceName());
+        x.setIcon(model.getTiles().get(tile));
+        basic.add(x);
+
+        x = new JButton();
+        tile = StandardTiles.LIGHTWEIGHT_ZONK;
+        x.addActionListener(controller);
+        x.setName(tile.getNiceName());
+        x.setToolTipText(tile.getNiceName());
+        x.setIcon(model.getTiles().get(tile));
+        basic.add(x);
+
+
+
+
         //</editor-fold>
         //<editor-fold defaultstate="collapsed" desc="floppy tiles">
         JPanel floppies = new JPanel(new GridLayout(2, 2));

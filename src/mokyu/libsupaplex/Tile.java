@@ -43,7 +43,12 @@ public class Tile {
             "Bug", "RAM Chip (Left)", "RAM chip (Right)", "Hardware 0",
             "Hardware 1", "Hardware 2", "Hardware 3", "Hardware 4",
             "Hardware 5", "Hardware 6", "Hardware 7", "Hardware 8",
-            "Hardware 9", "RAM Chip (Up)", "RAM Chip (Down)", "Invisible Wall (Void)"
+            "Hardware 9", "RAM Chip (Up)", "RAM Chip (Down)", "Invisible Wall (Void)",
+            "GravityAwareVoid",
+            "YellowCrushZonk",
+            "GhostBase",
+            "GhostMurphy",
+            "LightweightZonk"
         };
         this.setTile(rawTile);
         this.niceName = names[(int) rawTile];
@@ -56,7 +61,7 @@ public class Tile {
      * @throws RuntimeException, When parameter tile is not within 0x0 and 0x28
      */
     public void setTile(byte tile) throws RuntimeException {
-        if (tile > 0x28) {
+        if (tile > 0x2D) {
             throw new RuntimeException("Attempted to create invalid tile 0x" + String.format("%02x", rawTile));
         }
         this.rawTile = tile;
